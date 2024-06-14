@@ -196,12 +196,19 @@ footer {
 }
 
 /* Strength chart */
+.upper-chart-ad {
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1rem 2rem 0 2rem;
+}
+
 .chartandpoints {
     display: grid;
     grid-template-columns: 5fr 1fr;
     padding: 2rem;
     gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 10%;
     margin-right: 10%;
     place-items: center;
@@ -268,6 +275,12 @@ footer {
 .chart-explanation li {
     margin-top: 0.3rem;
     margin-left: 1.25rem;
+}
+
+.lower-chart-ad {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0 2rem 2rem 2rem;
 }
 
 /* books */
