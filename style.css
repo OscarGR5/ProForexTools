@@ -106,7 +106,7 @@ footer {
 }
 
 .welcome {
-    max-width: 50%;
+    max-width: 55%;
     margin: 0 auto 0;
     padding: 1rem;
     display: flex;
@@ -175,13 +175,13 @@ footer {
 
 .wleft-side-bar {
     order: -1; /* Ensure left side bar comes before main content */
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 0 1rem 3rem;
     margin-top: 5rem;
 }
 
 .wright-side-bar {
     order: 1; /* Ensure right side bar comes after main content */
-    padding: 1rem 1rem 1rem 0;
+    padding: 1rem 3rem 1rem 0;
     margin-top: 5rem;
 }
 
@@ -423,8 +423,27 @@ footer {
 }
 
 /* Position size calculator */
+.calculator-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.calc-left-side-bar {
+    order: -1;
+    flex: 0 0 10rem; /* Adjust width as per your design */
+    padding: 1rem 0 1rem 3rem;
+    margin-top: 2rem;
+}
+
+.calc-right-side-bar {
+    order: 1;
+    flex: 0 0 10rem; /* Adjust width as per your design */
+    padding: 1rem 3rem 1rem 0;
+    margin-top: 2rem;
+}
+
 .calculator-box {
-    margin: 2rem 25% 0 25%;
+    margin: 2rem 10% 0 10%;
     display: grid;
     grid-template-columns: 4fr 3fr;
     gap: 1rem;
@@ -516,7 +535,7 @@ footer {
 }
 
 .calculator-explanation {
-    margin: 3rem 25% 2rem 25%;
+    margin: 3rem 10% 2rem 10%;
 }
 
 .calculator-explanation h1 {

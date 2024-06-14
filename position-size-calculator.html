@@ -18,7 +18,7 @@
     <title>Forex Position Size Calculator</title>
 </head>
 <body>
-    <main>
+    <header>
         <div class="navbar">
             <div class="navbar-left">
                 <a href="welcome.html"><img src="images/logo.png" alt="Logo" class="navbar-logo"></a>
@@ -33,68 +33,103 @@
                 <a href="https://forms.gle/SkveNRwANXp6D2cc9" target="_blank" class="navbar-link">Contact us</a>
             </div>
         </div>
-        <div class="calculator-box">
-            <div class="calculator-ui">
-                <h2>Forex Position Size Calculator</h2>
-                <label for="account-currency">Account Currency</label>
-                <select id="account-currency">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="JPY">JPY</option>
-                    <option value="GBP">GBP</option>
-                    <option value="CHF">CHF</option>
-                    <option value="AUD">AUD</option>
-                    <option value="CAD">CAD</option>
-                    <option value="NZD">NZD</option>
-                </select>
+    </header>
 
-                <label for="account-balance">Account Balance</label>
-                <input type="number" id="account-balance" min="0" step="0.1" placeholder="0">
-
-                <label for="risk-percentage">Risk Percentage (%)</label>
-                <input type="number" min="0" max="100" id="risk-percentage" step="0.1" placeholder="0">
-
-                <label for="stop-loss">Stop Loss (in pips)</label>
-                <input type="number" id="stop-loss" min="0" step="0.1" placeholder="0">
-
-                <label for="currency-pair">Currency Pair</label>
-                <select id="currency-pair"></select>
-                
-                <div class="calculatebuttondiv">
-                    <button id="calculatebutton">Calculate</button>
-                </div>
-
-                <div id="customAlert" class="modal">
-                    <div class="modal-content">
-                        <span class="close"></span>
-                        <p id="alertMessage"></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="result-ui" >
-                <h2>Results</h2>
-                <div id="calculator-result" class="results-divs">
-                    <div>
-                        <p>Amount at Risk</p> 
-                        <span id="amountAtRisk"></span> 
-                        <span id="accountCurrency">0</span>
-                    </div>
-                    <div>
-                        <p>Position Size (units)</p>
-                        <span id="positionSize">0</span>
-                    </div>
-                    <div>
-                        <p>Standard Lots</p>
-                        <span id="standardLots">0</span>
-                    </div>
-                </div>
-            </div>
+    <main class="calculator-main">
+        <div class="calc-left-side-bar">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1238500418315705"
+                crossorigin="anonymous">
+            </script>
+            <!-- sidebar -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-1238500418315705"
+                data-ad-slot="7992941328"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
+        <div>
+            <div class="calculator-box">
+                <div class="calculator-ui">
+                    <h2>Forex Position Size Calculator</h2>
+                    <label for="account-currency">Account Currency</label>
+                    <select id="account-currency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                        <option value="GBP">GBP</option>
+                        <option value="CHF">CHF</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="NZD">NZD</option>
+                    </select>
+
+                    <label for="account-balance">Account Balance</label>
+                    <input type="number" id="account-balance" min="0" step="0.1" placeholder="0">
+
+                    <label for="risk-percentage">Risk Percentage (%)</label>
+                    <input type="number" min="0" max="100" id="risk-percentage" step="0.1" placeholder="0">
+
+                    <label for="stop-loss">Stop Loss (in pips)</label>
+                    <input type="number" id="stop-loss" min="0" step="0.1" placeholder="0">
+
+                    <label for="currency-pair">Currency Pair</label>
+                    <select id="currency-pair"></select>
+                    
+                    <div class="calculatebuttondiv">
+                        <button id="calculatebutton">Calculate</button>
+                    </div>
+
+                    <div id="customAlert" class="modal">
+                        <div class="modal-content">
+                            <span class="close"></span>
+                            <p id="alertMessage"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-ui" >
+                    <h2>Results</h2>
+                    <div id="calculator-result" class="results-divs">
+                        <div>
+                            <p>Amount at Risk</p> 
+                            <span id="amountAtRisk"></span> 
+                            <span id="accountCurrency">0</span>
+                        </div>
+                        <div>
+                            <p>Position Size (units)</p>
+                            <span id="positionSize">0</span>
+                        </div>
+                        <div>
+                            <p>Standard Lots</p>
+                            <span id="standardLots">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="calculator-explanation">
                 <h1>Position Size Calculator</h1>           
                 <p>Our Forex Position Size Calculator offers quick and accurate calculations using the latest market prices. Simple and intuitive, it helps traders determine the amount at risk, position size, and number of standard lots with ease. <b>Latest prices are used for calculations.</b></p>
             </div>
+        </div>
+        <div class="calc-right-side-bar">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1238500418315705"
+                crossorigin="anonymous">
+            </script>
+            <!-- sidebar -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-1238500418315705"
+                data-ad-slot="7992941328"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
     </main>
     <footer>
         <div class="footer-content">
