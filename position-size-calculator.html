@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple and intuitive calculator that helps you calculate the position size for your Forex trades.">
+    <meta name="google-adsense-account" content="ca-pub-1238500418315705">
+    <meta name="keywords" content="forex, currency, forex trading, position size calculator, calculator, accout currency, amount at risk, risk percentage, position size, standard lots, stop loss, currency par, EURUSD, USDJPY">
+    <meta name="robots" content="index, follow">
+    <script src="scripts/poscalculator.js" type="module"></script>
+    <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="icon" href="images/android-chrome-512x512.png" sizes="512x512" type="image/png">
+    <link rel="icon" href="images/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Forex Position Size Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href="welcome.html"><img src="images/logo.png" alt="Logo" class="navbar-logo"></a>
+                <a href="strength-chart.html" class="navbar-link">Strength Chart</a>
+                <a href="position-size-calculator.html" class="navbar-link">Position Size Calculator</a>
+                <a href="best-forex-books.html" class="navbar-link">Best Forex Books</a>
+                <a href="best-price-action-books.html" class="navbar-link">Price Action Books</a>
+                <a href="ichimoku.html" class="navbar-link">Ichimoku Kinko Hyo</a>
+            </div>
+            <div class="navbar-right">
+                <a href="about.html" class="navbar-link">About</a>
+                <a href="https://forms.gle/SkveNRwANXp6D2cc9" target="_blank" class="navbar-link">Contact us</a>
+            </div>
+        </div>
+        <div class="calculator-box">
+            <div class="calculator-ui">
+                <h2>Forex Position Size Calculator</h2>
+                <label for="account-currency">Account Currency</label>
+                <select id="account-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CHF">CHF</option>
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="NZD">NZD</option>
+                </select>
+
+                <label for="account-balance">Account Balance</label>
+                <input type="number" id="account-balance" min="0" step="0.1" placeholder="0">
+
+                <label for="risk-percentage">Risk Percentage (%)</label>
+                <input type="number" min="0" max="100" id="risk-percentage" step="0.1" placeholder="0">
+
+                <label for="stop-loss">Stop Loss (in pips)</label>
+                <input type="number" id="stop-loss" min="0" step="0.1" placeholder="0">
+
+                <label for="currency-pair">Currency Pair</label>
+                <select id="currency-pair"></select>
+                
+                <div class="calculatebuttondiv">
+                    <button id="calculatebutton">Calculate</button>
+                </div>
+
+                <div id="customAlert" class="modal">
+                    <div class="modal-content">
+                        <span class="close"></span>
+                        <p id="alertMessage"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-ui" >
+                <h2>Results</h2>
+                <div id="calculator-result" class="results-divs">
+                    <div>
+                        <p>Amount at Risk</p> 
+                        <span id="amountAtRisk"></span> 
+                        <span id="accountCurrency">0</span>
+                    </div>
+                    <div>
+                        <p>Position Size (units)</p>
+                        <span id="positionSize">0</span>
+                    </div>
+                    <div>
+                        <p>Standard Lots</p>
+                        <span id="standardLots">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="calculator-explanation">
+                <h1>Position Size Calculator</h1>           
+                <p>Our Forex Position Size Calculator offers quick and accurate calculations using the latest market prices. Simple and intuitive, it helps traders determine the amount at risk, position size, and number of standard lots with ease. <b>Latest prices are used for calculations.</b></p>
+            </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>@ProForexTools</p>
+            <div class="footer-links">
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

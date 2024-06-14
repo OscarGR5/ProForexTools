@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Product Sans', sans-serif;
+}
+
+html {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f8f3e8;
+    padding-top: 6rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: #4e4e4e;
+    margin-bottom: 2rem;
+    z-index: 99999;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 12rem; 
+    height: auto;
+    margin: 0 1rem 0 1rem;
+}
+
+.navbar-link {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    margin-top: 1.6rem;
+    height: 3rem;
+    background-color: #4e4e4e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-links {
+    margin-left: 1rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.footer-links a:first-child {
+    margin-left: 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome section */
+.welcome-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.welcome {
+    max-width: 50%;
+    margin: 0 auto 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.welcome-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Tool sections */
+.tool-section {
+    margin-bottom: 2.5rem;
+}
+
+.navigation-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.tool-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.adtool-section {
+    margin-bottom: 2.5rem;
+}
+
+/* Welcome button */
+.welcome-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-button:hover {
+    background-color: #0056b3;
+}
+
+.left-side-bar, .right-side-bar {
+    flex: 0 0 10rem; /* Adjust width as per your design */
+    background-color: #f8f3e8; /* Example background color */
+}
+
+.left-side-bar {
+    order: -1; /* Ensure left side bar comes before main content */
+    padding: 1rem 0 1rem 1rem;
+}
+
+.right-side-bar {
+    order: 1; /* Ensure right side bar comes after main content */
+    padding: 1rem 1rem 1rem 0;
+}
+
+/* Optional: Adjust styles for ads */
+.adsbygoogle {
+    display: block;
+    margin-bottom: 1rem; /* Additional margin if needed */
+}
+
+/* Strength chart */
+.chartandpoints {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: 2rem;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    place-items: center;
+}
+
+#chartdiv {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#exchangeRatesChart {
+    padding: 0.3rem;
+    background-color: white;
+    border: 1px solid rgb(161, 160, 160);
+    width: 100%;
+    height: 100%;
+}
+
+.last-points {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 1.2rem 0 1.2rem;
+    justify-content: center;
+    border: 1px solid rgb(161, 160, 160);
+    height: auto;
+}
+
+.lastTimeLabel {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.currency-label {
+    margin-bottom: 1rem;
+}
+
+.chart-explanation {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2rem;
+}
+
+.chart-explanation h1 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.chart-explanation h2 {
+    margin-top: 1.6rem;
+}
+
+.chart-explanation h3{
+    margin-top: 1rem;
+}
+
+.chart-explanation p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.chart-explanation li {
+    margin-top: 0.3rem;
+    margin-left: 1.25rem;
+}
+
+/* books */
+.books-container {
+    max-width: 60%;
+    margin: 0 auto 0;
+    padding: 1rem;
+}
+
+#books-list {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 5rem;
+}
+
+.books-container h1 {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.book {
+    display: flex;
+    justify-content: center;
+}
+
+.book img {
+    width: auto; 
+    height: 16rem;
+}
+
+.book-info {
+    flex-grow: 1;
+}
+
+.book-info h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.book-info p {
+    margin: 0.2rem 0;
+    font-size: 16px;
+}
+
+.buy-link {
+    margin-top: 0.5rem;
+    display: inline-block;
+    background-color: #ff9900;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease;
+}
+
+.buy-link:hover {
+    background-color: #ff99008e;
+}
+
+.ich-container {
+    max-width: 50%;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+}
+
+.ich-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.ich-container h1 {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.ichimoku-section h2 {
+    margin-top: 2rem;
+}
+
+.ichimoku-section h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.ich-container ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+}
+
+.ich-works li {
+    margin-bottom: 0.2rem;
+}
+
+.ich-books {
+    border-top: 1px solid rgb(93, 93, 93);
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.ich-books h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#ichbooks-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.ichbook {
+    align-items: center;
+    text-align: center;
+}
+
+.ichbook img {
+    width: auto; 
+    height: 30rem;
+}
+
+.ich-buy-link {
+    margin-top: 1rem;
+    display: inline-block;
+    width: 16rem;
+    background-color: #ff9900;
+    transition: background-color 0.3s ease;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+}
+
+.ich-buy-link:hover {
+    background-color: #ff99008e;
+}
+
+/* Position size calculator */
+.calculator-box {
+    margin: 2rem 25% 0 25%;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 1rem;
+    
+}
+
+.calculator-box h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.calculator-ui {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ece7dc;
+    padding: 1.2rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+.calculator-ui label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.calculator-ui input,
+.calculator-ui select {
+    width: 50%;
+    padding: 0.4rem;
+    margin-bottom: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: rgb(252, 255, 255);
+    box-sizing: border-box;
+}
+
+.calculatebuttondiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.calculator-ui button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 50%;
+}
+
+.calculator-ui button:hover {
+    background-color: #45a049;
+}
+
+.result-ui {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #ece7dc;
+    padding: 1.2rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+.result-ui p {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.results-divs div {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.modal {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: red;
+    font-weight: 600;
+}
+
+.calculator-explanation {
+    margin: 3rem 25% 2rem 25%;
+}
+
+.calculator-explanation h1 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+/* About */
+.about-container {
+    max-width: 50%;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    background-color: #ece7dc;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.about-container h1 {
+    margin-bottom: 1rem;
+}
+
+.about-container h2 {
+    margin-top: 1.6rem;
+}
+
+.about-container h3{
+    margin-top: 1rem;
+}
+
+.about-container p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-container li {
+    margin-top: 0.3rem;
+    margin-left: 1.25rem;
+}
+
+.donate {
+    padding-top: 1.6rem;
+    border-top: 1px solid #000000;
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate h2 {
+    margin: 0;
+}
+
+.disclaimer {
+    font-size: 0.9rem;
+    color: #414141;
+    margin-top: 1.6rem;
+    border-top: 1px solid #000000;
+    padding-top: 1rem;
+}
+
+.terms-and-conditions, .privacy-policy {
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem auto;
+}
+
+.terms-and-conditions h3, .privacy-policy h3{
+    margin-top: 1rem;
+}
+
+.terms-and-conditions p, .privacy-policy p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+}

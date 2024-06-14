@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Strength chart for Forex. The Currency Strength Chart is a graphical tool that shows the relative strength of different currencies.">
+        <meta name="keywords" content="forex, currency,chart, strength, relative, absolute, ichimoku, japansese, forex trading">
+        <meta name="robots" content="index, follow">
+        <meta name="google-adsense-account" content="ca-pub-1238500418315705">
+        <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="icon" href="images/android-chrome-512x512.png" sizes="512x512" type="image/png">
+        <link rel="icon" href="images/android-chrome-192x192.png" sizes="192x192" type="image/png">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="scripts/client.js" type="module"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Currency strength chart</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="navbar-left">
+                        <a href="welcome.html"><img src="images/logo.png" alt="Logo" class="navbar-logo"></a>
+                        <a href="strength-chart.html" class="navbar-link">Strength Chart</a>
+                        <a href="position-size-calculator.html" class="navbar-link">Position Size Calculator</a>
+                        <a href="best-forex-books.html" class="navbar-link">Best Forex Books</a>
+                        <a href="best-price-action-books.html" class="navbar-link">Price Action Books</a>
+                        <a href="ichimoku.html" class="navbar-link">Ichimoku Kinko Hyo</a>
+                </div>
+                <div class="navbar-right">
+                    <a href="about.html" class="navbar-link">About</a>
+                    <a href="https://forms.gle/SkveNRwANXp6D2cc9" target="_blank" class="navbar-link">Contact us</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="chartandpoints">
+                <div id="chartdiv">
+                    <canvas id="exchangeRatesChart"></canvas>
+                </div>
+                <div class="last-points" id="last-points"></div>
+            </div>
+            <div class="chart-explanation">
+                <h1>Currency Strength Chart</h1>           
+                <p>The Currency Strength Chart is a graphical tool that shows the relative strength of different currencies. It allows traders to quickly assess which currencies are gaining or losing value against others and to understand market movements and identify potential trading opportunities.<br><b>This chart is updated every 5 minutes. Computes strength relative to 24 hours back.</b></p>
+
+                <h3>How Does the Currency Strength Chart Work?</h3>
+                <p>The chart works by analyzing and aggregating the exchange rates of a basket of currencies. By comparing the performance of each currency against others, the chart highlights trends and relative strengths. This helps traders make informed decisions about which currencies to buy or sell.</p>
+
+                <h3>How is the Currency Strength Calculated?</h3>
+                <p>The calculation of currency strength involves several steps:
+                    <ul>
+                        <li><strong>Exchange Rate Data:</strong> Collect real-time exchange rate data for a set of major currency pairs.</li>
+                        <li><strong>Normalization:</strong> Normalize the exchange rate data to ensure comparability.</li>
+                        <li><strong>Aggregation:</strong> Aggregate the normalized data to compute an overall strength index for each currency.</li>
+                        <li><strong>Visualization:</strong> Plot the aggregated data on the chart to show the relative strength of each currency.</li>
+                    </ul>
+                </p>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p>@ProForexTools</p>
+                <div class="footer-links">
+                    <a href="terms-and-conditions.html">Terms and Conditions</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

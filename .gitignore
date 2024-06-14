@@ -1,0 +1,7 @@
+images/*
+json_files/*
+lambda-proforextools-web/*
+node_modules/*
+package-lock.json
+package.json
+sitemap.xml

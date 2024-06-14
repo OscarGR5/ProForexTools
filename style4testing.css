@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Product Sans', sans-serif;
+}
+
+html {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f8f3e8;
+    padding-top: 6rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: #4e4e4e;
+    margin-bottom: 2rem;
+    z-index: 99999;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 12rem; 
+    height: auto;
+    margin: 0 1rem 0 1rem;
+}
+
+.navbar-link {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    margin-top: 1.6rem;
+    height: 3rem;
+    background-color: #4e4e4e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-links {
+    margin-left: 1rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.footer-links a:first-child {
+    margin-left: 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* ----------------------------------------- */
+
+
+.welcome-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.welcome {
+    max-width: 50%;
+    margin: 0 auto 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.welcome-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Tool sections */
+.tool-section {
+    margin-bottom: 2.5rem;
+}
+
+.navigation-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.tool-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Welcome button */
+.welcome-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-button:hover {
+    background-color: #0056b3;
+}
+
+.wleft-side-bar, .wright-side-bar {
+    flex: 0 0 10rem; /* Adjust width as per your design */
+    background-color: #f8f3e8; /* Example background color */
+}
+
+.wleft-side-bar {
+    order: -1; /* Ensure left side bar comes before main content */
+    padding: 1rem 0 1rem 1rem;
+    margin-top: 5rem;
+}
+
+.wright-side-bar {
+    order: 1; /* Ensure right side bar comes after main content */
+    padding: 1rem 1rem 1rem 0;
+    margin-top: 5rem;
+}
+
+/* Optional: Adjust styles for ads */
+.wadsbygoogle {
+    display: block;
+    margin-bottom: 1rem; /* Additional margin if needed */
+}
+
+.adtool-section {
+    margin-bottom: 2.5rem;
+}
