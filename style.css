@@ -168,25 +168,31 @@ footer {
     background-color: #0056b3;
 }
 
-.left-side-bar, .right-side-bar {
+.wleft-side-bar, .wright-side-bar {
     flex: 0 0 10rem; /* Adjust width as per your design */
     background-color: #f8f3e8; /* Example background color */
 }
 
-.left-side-bar {
+.wleft-side-bar {
     order: -1; /* Ensure left side bar comes before main content */
     padding: 1rem 0 1rem 1rem;
+    margin-top: 5rem;
 }
 
-.right-side-bar {
+.wright-side-bar {
     order: 1; /* Ensure right side bar comes after main content */
     padding: 1rem 1rem 1rem 0;
+    margin-top: 5rem;
 }
 
 /* Optional: Adjust styles for ads */
-.adsbygoogle {
+.wadsbygoogle {
     display: block;
     margin-bottom: 1rem; /* Additional margin if needed */
+}
+
+.adtool-section {
+    margin-bottom: 2.5rem;
 }
 
 /* Strength chart */
