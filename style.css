@@ -376,10 +376,14 @@ footer {
 }
 
 /* Ichimoku */
+.ich-main {
+    display: flex;
+    flex-direction: row;
+}
 
 .ich-container {
-    max-width: 50%;
-    margin: 0 auto 2rem;
+    max-width: 80%;
+    margin: 0 auto 0;
     padding: 1rem;
 }
 
