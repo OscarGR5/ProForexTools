@@ -11,9 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="book-info">
                         <h2>${book.title}</h2>
                         <p>Author: ${book.author}</p>
-                        <p>Release Date: ${book.releaseDate}</p>
-                        <p>Pages: ${book.pages}</p>
-                        <p>Synopsis: ${book.synopsis}</p>
+                        <p>My opinion: ${book.opinion}</p>
                         <a href="${book.link}" target="_blank" class="buy-link">Buy on Amazon</a>
                     </div>
                 `;
