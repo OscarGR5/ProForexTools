@@ -32,7 +32,6 @@ To explore our tools and resources, visit our website:
 
 ---
 
-Thank you for visiting ProForexTools. We hope our resources help you become a successful Forex trader.
 ## Technical Details
 
 ### Strength Chart
