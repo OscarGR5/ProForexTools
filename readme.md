@@ -30,14 +30,6 @@ To explore our tools and resources, visit our website:
 - [Best Forex Books](best-forex-books.html)
 - [Ichimoku Kinko Hyo](ichimoku.html)
 
-## Contributing
-
-We welcome contributions to improve our website and resources. If you have any suggestions or would like to contribute, please contact us through our [Contact Us](https://forms.gle/SkveNRwANXp6D2cc9) form.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ---
 
 Thank you for visiting ProForexTools. We hope our resources help you become a successful Forex trader.
