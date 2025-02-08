@@ -21,15 +21,6 @@ ProForexTools provides traders with essential tools and resources to improve the
 - **Best Forex Books**: Discover essential books on Forex trading recommended by experts.
 - **Ichimoku Kinko Hyo**: Master the Ichimoku Kinko Hyo indicator with our comprehensive guide and resources.
 
-## Getting Started
-
-To explore our tools and resources, visit our website:
-
-- [Strength Chart](strength-chart.html)
-- [Position Size Calculator](position-size-calculator.html)
-- [Best Forex Books](best-forex-books.html)
-- [Ichimoku Kinko Hyo](ichimoku.html)
-
 ---
 
 ## Technical Details
@@ -50,10 +41,6 @@ The Position Size Calculator helps traders determine the optimal position size f
 
 Both the Strength Chart and Position Size Calculator rely on real-time data fetched from external APIs. The data is processed client-side using JavaScript, ensuring that the tools are always up-to-date with the latest market information.
 
-For more details, refer to the source code of the respective HTML files:
-
-- [Strength Chart](#file:strength-chart.html)
-- [Position Size Calculator](#file:position-size-calculator.html)
 ## Current Status
 
 Please note that the website is currently inactive, and the AWS Lambda function responsible for updating the Strength Chart has been turned off. As a result, the tools and resources may not reflect the latest market data.
