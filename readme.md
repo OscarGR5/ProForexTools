@@ -2,14 +2,6 @@
 
 Welcome to ProForexTools. This website offers a variety of tools and educational resources to enhance your trading.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Overview
 
 ProForexTools provides traders with essential tools and resources to improve their trading strategies and knowledge. Our platform includes a strength chart, position size calculator, recommended Forex books, and a comprehensive guide to the Ichimoku Kinko Hyo indicator.
